@@ -28,8 +28,36 @@
   background-color: white; 
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+
+.enviar:hover {
+  background-color: lightgrey; 
+  transform: scale(1.1);
+}
+
+
+.enviar:active {
+  background-color: darkgrey; 
+  transform: scale(0.95);
+}
+
+
+input:focus {
+  background-color: #f0f8ff;
+  outline: none;
+}
+
+
+input[type="email"]:valid {
+  color: green;
+}
+
+
+input[type="email"]:invalid {
+  color: red;
+}
 
 .imagem {
   position: absolute;
@@ -39,8 +67,7 @@
   box-shadow: 0 0 30px #000;
 }
 
-
-.teste{
+.teste {
   position: fixed;
   background-color: black;
   padding: 32px;
@@ -48,7 +75,6 @@
   color: white;
   box-shadow: 0 -2px 10px #000;
 }
-
 
 .rodape {
   text-align: start;
@@ -64,17 +90,18 @@
   gap: 20px;
   color: white;
   box-shadow: 0 -2px 10px #000;
+
 }
 
-
-.fa-square-instagram {
-  font-size: 50px;
+  .fa-square-instagram {
     color: pink;
     transition: 1s;
+    font-size: 50px;
 }
 
 .fa-square-instagram:hover {
   font-size: 60px;
+
 }
 
 .fa-square-whatsapp {
@@ -85,6 +112,7 @@
 
 .fa-square-whatsapp:hover {
   font-size: 60px;
+
 }
 
 .fa-square-facebook {
@@ -95,6 +123,5 @@
 
 .fa-square-facebook:hover {
   font-size: 60px;
+
 }
-
-
